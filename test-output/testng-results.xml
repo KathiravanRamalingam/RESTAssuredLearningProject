@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="12" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8672" started-at="2021-10-11T10:05:14 IST" finished-at="2021-10-11T10:05:23 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8672" started-at="2021-10-11T10:05:14 IST" finished-at="2021-10-11T10:05:23 IST">
+      <class name="day1.ContactsList">
+        <test-method status="PASS" signature="addingContact()[pri:0, instance:day1.ContactsList@74650e52]" name="addingContact" duration-ms="4083" started-at="2021-10-11T10:05:14 IST" description="Getting specific Contact " finished-at="2021-10-11T10:05:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingContact -->
+        <test-method status="PASS" signature="addingContactBigSize()[pri:0, instance:day1.ContactsList@74650e52]" name="addingContactBigSize" duration-ms="653" started-at="2021-10-11T10:05:18 IST" description="adding contact with too many character" finished-at="2021-10-11T10:05:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingContactBigSize -->
+        <test-method status="PASS" signature="addingInvalidEmailId()[pri:0, instance:day1.ContactsList@74650e52]" name="addingInvalidEmailId" duration-ms="632" started-at="2021-10-11T10:05:19 IST" description="@  is Missing in EmailId" finished-at="2021-10-11T10:05:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingInvalidEmailId -->
+        <test-method status="PASS" signature="addingInvalidFirstName()[pri:0, instance:day1.ContactsList@74650e52]" name="addingInvalidFirstName" duration-ms="680" started-at="2021-10-11T10:05:20 IST" description="adding firstname with numbers" finished-at="2021-10-11T10:05:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingInvalidFirstName -->
+        <test-method status="PASS" signature="UpdatingContact()[pri:0, instance:day1.ContactsList@74650e52]" name="UpdatingContact" duration-ms="656" started-at="2021-10-11T10:05:20 IST" description="Getting specific Contact " depends-on-methods="day1.ContactsList.addingContact" finished-at="2021-10-11T10:05:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdatingContact -->
+        <test-method status="PASS" signature="getSpecificContact3()[pri:0, instance:day1.ContactsList@74650e52]" name="getSpecificContact3" duration-ms="620" started-at="2021-10-11T10:05:21 IST" description="Getting specific Contact " depends-on-methods="day1.ContactsList.UpdatingContact" finished-at="2021-10-11T10:05:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSpecificContact3 -->
+        <test-method status="PASS" signature="deleteRecord()[pri:0, instance:day1.ContactsList@74650e52]" name="deleteRecord" duration-ms="641" started-at="2021-10-11T10:05:22 IST" description="Deleting specific Contact " depends-on-methods="day1.ContactsList.getSpecificContact3" finished-at="2021-10-11T10:05:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRecord -->
+        <test-method status="PASS" signature="getSpecificContact4()[pri:0, instance:day1.ContactsList@74650e52]" name="getSpecificContact4" duration-ms="631" started-at="2021-10-11T10:05:22 IST" description="Deleting specific Contact " depends-on-methods="day1.ContactsList.deleteRecord" finished-at="2021-10-11T10:05:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSpecificContact4 -->
+      </class> <!-- day1.ContactsList -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
